@@ -1,0 +1,70 @@
+# .gitignore for medcare-ai project
+# Ignore virtual environments
+venv/
+venv*/
+.env/
+.env.bak
+.venv/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE and editor config
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dataset, archives and large generated outputs
+# Keep these local; don't add large binaries to the repo.
+data/
+archive/
+checkpoints/
+outputs/
+
+# Model weights / checkpoints
+medcare_model.pth
+*.pth
+*.ckpt
+*.h5
+*.onnx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Optional: ignore common image file types if you prefer
+# Uncomment to ignore images globally (useful if raw images are large):
+# *.jpg
+# *.jpeg
+# *.png
+# *.bmp
+
+# Python wheel metadata
+pip-wheel-metadata/
+
+# End of .gitignore
