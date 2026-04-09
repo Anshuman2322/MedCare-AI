@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark themed background to match the screenshot */
+body {
+  @apply bg-[#061021] text-gray-100 antialiased;
+  background-image: radial-gradient(ellipse at 10% 10%, rgba(20,138,255,0.06) 0%, transparent 20%), radial-gradient(ellipse at 90% 90%, rgba(0,255,217,0.03) 0%, transparent 20%);
+}
+
+/* Neon/glass utilities */
+.glass-card {
+  @apply bg-black/30 backdrop-blur-md border border-cyan-700/20 rounded-3xl shadow-[0_8px_40px_rgba(2,6,23,0.6)];
+}
+
+.neon-btn {
+  @apply text-white font-semibold px-6 py-3 rounded-full inline-flex items-center gap-3;
+  background-image: linear-gradient(90deg,#0ea5b3,#06b6d4 60%);
+  box-shadow: 0 6px 30px rgba(3,105,161,0.25), 0 0 20px rgba(6,182,212,0.12) inset;
+}
+.neon-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(6,182,212,0.28), 0 0 40px rgba(6,182,212,0.35);
+}
+
+.dashed-upload {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: rgba(14,165,233,0.35);
+  border-radius: 14px;
+  padding: 36px;
+}
+
+.cloud-icon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: rgba(14,165,233,0.95);
+}
+
+.card-title {
+  text-shadow: 0 2px 12px rgba(6,182,212,0.18);
+}
+
+/* center helper for the main card */
+.center-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

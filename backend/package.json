@@ -1,0 +1,11 @@
+{
+  "name": "medcare-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node run-python-dev.js",
+    "start": "node run-python-dev.js"
+  },
+  "description": "Flask backend for MedCare-AI",
+  "license": "UNLICENSED"
+}
